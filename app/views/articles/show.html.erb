@@ -1,0 +1,5 @@
+<h1><%= @article.title %> <%= @article.content %></h1>
+
+<%= link_to "Volver a artículos", articles_path %>
+<%= link_to "Eliminar artículo", article_path(@article), method: :delete %>
+data: {confirm: "Estás seguro?"}
